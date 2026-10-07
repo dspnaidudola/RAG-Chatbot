@@ -64,7 +64,7 @@ st.write(
 )
 
 st.caption(
-    "Gemini 3.8 Flash + Gemini Embeddings + Pinecone"
+    "Gemini 2.5 Flash + Gemini Embeddings + Pinecone"
 )
 
 
@@ -89,7 +89,7 @@ def get_embeddings():
 def get_llm():
 
     return ChatGoogleGenerativeAI(
-        model="gemini-3.8-flash",
+        model="gemini-2.5-flash",
         google_api_key=GOOGLE_API_KEY,
         temperature=0.1,
         max_output_tokens=700,
